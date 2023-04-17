@@ -1,4 +1,4 @@
-  --to check imbalance data or not
+  --See if the samples are uniformly distributed
 
 SELECT
   COUNT(*),

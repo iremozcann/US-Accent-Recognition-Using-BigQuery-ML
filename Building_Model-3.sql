@@ -36,7 +36,7 @@ SELECT
   ELSE
   'non-us'
 END
-  AS predicted_language,
+  AS predicted_location,
   predicted_language_probs,
   CASE
     WHEN LANGUAGE = TRUE THEN 'US'
@@ -52,6 +52,7 @@ FROM
     FROM
       `ml-project-383113.accent.test_data` ),
     STRUCT(0.6 AS threshold))
+
 
 
 	  --In BigQuery ML, roc_auc is simply a queryable field when evaluating your trained ML model
@@ -73,3 +74,46 @@ FROM
       * EXCEPT(UUID)
     FROM
       `ml-project-383113.accent.test_data`));
+
+
+
+
+--GLOBAL_EXPLAIN
+--It is giving feature wise contribution, which feature is contributing how much in the model’s overall prediction
+
+SELECT
+  *
+FROM
+  ML.GLOBAL_EXPLAIN (MODEL `accent.recognition_pred`);
+
+
+
+--ROC CURVE
+
+SELECT
+  *
+FROM
+  ML.ROC_CURVE (MODEL `accent.recognition_pred`,
+    TABLE `ml-project-383113.accent.train_data`,
+    GENERATE_ARRAY(0.4,0.6,0.01) );
+
+
+
+	--CONFUSION_MATRIX
+
+SELECT
+  *
+FROM
+  ML.CONFUSION_MATRIX (MODEL `accent.recognition_pred`,
+    TABLE `ml-project-383113.accent.train_data`,
+    STRUCT(0.55 AS threshold));
+
+
+--WEIGHTS
+
+SELECT
+  *
+FROM
+  ML.WEIGHTS(MODEL `accent.recognition_pred`)
+ORDER BY
+  ABS(WEIGHT) DESC

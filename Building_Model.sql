@@ -3,7 +3,7 @@
 CREATE OR REPLACE MODEL
   accent.recognition_pred OPTIONS(MODEL_TYPE='logistic_reg',
     INPUT_LABEL_COLS=['language'],
-    l2_reg=1.5,
+    l2_reg=1.2,
     early_stop=TRUE,
     max_iterations=15,
     enable_global_explain = TRUE ) AS

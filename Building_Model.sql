@@ -36,7 +36,7 @@ SELECT
   ELSE
   'non-us'
 END
-  AS predicted_location,
+  AS predicted_language,
   predicted_language_probs,
   CASE
     WHEN LANGUAGE = TRUE THEN 'US'

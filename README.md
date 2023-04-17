@@ -1,5 +1,5 @@
 # US-Accent-Recognition-Using-BigqueryML
-This study aims to recognize the American accent among six accents: American, British, French,
+This project aims to recognize the American accent among six accents: American, British, French,
 German, Italian, and Spanish. Logistic Regression machine learning algorithm is employed for the accent recognition task.
 In the methods, the user-defined hyperparameters are optimized to obtain high-accuracy results. The machine learning model has been created within BigQuery in Google Cloud Platform (GCP), using SQL.
 

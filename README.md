@@ -1,7 +1,7 @@
 # US-Accent-Recognition-Using-BigqueryML
 This study aims to recognize the American accent among six accents: American, British, French,
 German, Italian, and Spanish. Logistic Regression machine learning algorithm is employed for the accent recognition task.
-In the methods, the user-defined hyperparameters are optimized to obtain high-accuracy results. The machine learning model has been created witin BigQuery in Google Cloud Platform (GCP), using SQL.
+In the methods, the user-defined hyperparameters are optimized to obtain high-accuracy results. The machine learning model has been created within BigQuery in Google Cloud Platform (GCP), using SQL.
 
 ## Dataset
 The “Speaker Accent Recognition” data set available on
@@ -15,7 +15,7 @@ feature of the classification in the experiments. There are 12
 features that are extracted from the audio sample via MFCC.
 
 ## Method
-Although the data set contains 6 different accents, the goal is to exclusively separate US speakers from speakers from other countries. So, a binary classification issue is created from the multi-class classification data set. The machine learning model has been created witin BigQuery in Google Cloud Platform (GCP), using SQL.
+Although the data set contains 6 different accents, the goal is to exclusively separate US speakers from speakers from other countries. So, a binary classification issue is created from the multi-class classification data set. The machine learning model has been created within BigQuery in Google Cloud Platform (GCP), using SQL.
 
 
 # Logistic Regression Analysis with BigQuery

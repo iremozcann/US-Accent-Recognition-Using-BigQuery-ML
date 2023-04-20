@@ -82,7 +82,7 @@ The ROC_AUC of the training set and the test set are practically identical and a
 
 -The ML.ROC_CURVE() function is frequently used to understand the ROC curve for assessing the effectiveness of binary logistic regression models
 
-<img src="https://github.com/iremozcann/US-Accent-Recognition-Using-BigqueryML/blob/main/Results-Image/roc-curve.png" alt="alt text" width=7800">
+<img src="https://github.com/iremozcann/US-Accent-Recognition-Using-BigqueryML/blob/main/Results-Image/roc-curve.png" alt="alt text" width="750">
 
 - For confusion matrix:
 

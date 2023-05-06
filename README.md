@@ -110,5 +110,8 @@ And it shows that:
 - D. Dua, and C. Graff,“UCI Machine Learning Repository”,
 [http://archive.ics.uci.edu/ml]. Irvine, CA: University of
 California, School of Information and Computer Science, 2019.
+-  Z. Ma, and E. Fokoue, “A comparison of classifiers in performing speaker accent recognition using MFCCs,” arXiv preprint
+arXiv:1501.07866, 2015.
 - Muttaqi, Mohammad, Ali Degirmenci, and Omer Karal. "US Accent Recognition Using Machine Learning Methods." 2022 Innovations in Intelligent Systems and Applications Conference (ASYU). IEEE, 2022.
 - Karaoglu, Aleyna Nur, et al. "Performance Improvement with Decision Tree in Predicting Heart Failure." 2021 6th International Conference on Computer Science and Engineering (UBMK). IEEE, 2021.
+
